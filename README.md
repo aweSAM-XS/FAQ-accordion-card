@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 -   [Solution URL](https://github.com/aweSAM-XS/FAQ-accordion-card)
--   [Live Site URL](https://faq-accordion.netlify.app)
+-   [Live Site URL](https://fm-faq-card.netlify.app/)
 
 ## My process
 
