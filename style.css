@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    /* Primary colors */
+    /* Text */
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    /* Gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    --bg-gradient: linear-gradient(var(--soft-violet), var(--soft-blue));
+
+    /* Neutral */
+    /* Text */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    /* Dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
+    /* font */
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    background: var(--bg-gradient);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    background: aliceblue;
+    padding: 2rem;
+    max-width: 70rem;
+    margin-block: auto;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1rem var(--very-dark-grayish-blue);
+}
+
+.illustration,
+.faqs {
+    width: 50%;
+	height: 60vh;
+}
+
+.faqs {
+	padding: 0 2rem;
+}
+
+.box {
+    position: absolute;
+    top: 25%;
+    left: -2.5%;
+}
+
+.woman-online {
+    position: absolute;
+    inset: 2rem 0;
+}
+
+.bg-pattern {
+    position: relative;
+    left: -23%;
+}
+
+.bg-pattern img {
+    width: 100%;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+label {
+    color: var(--dark-grayish-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	cursor: pointer;
+}
+
+label::after {
+    content: url('./images/icon-arrow-down.svg');
+}
+
+x h1, input[type='radio']:checked ~ label {
+	color: var(--very-dark-desaturated-blue);
+	font-weight: 700;
+}
+
+label:hover {
+	color: var(--soft-red);
+	font-weight: 700;
+}
+
+hr {
+    color: var(--light-grayish-blue);
+}
+
+.faq-answer {
+    display: none;
+	color: var(--dark-grayish-blue);
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']:checked ~ .faq-answer {
+    display: block;
+	padding-block: 1rem 0;
+}
+
+.attribution {
+    padding: 2rem 0;
+}
+.attribution a {
+    color: var(--light-grayish-blue);
+    text-decoration: none;
+}
